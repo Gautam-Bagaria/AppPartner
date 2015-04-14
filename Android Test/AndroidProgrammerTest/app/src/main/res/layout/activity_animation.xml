@@ -1,0 +1,76 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.apppartner.androidprogrammertest.AnimationActivity"
+    android:background="@drawable/bg_animation">
+
+    <include layout="@layout/toolbar"
+        android:id="@+id/include2" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/fade_btn"
+        android:onClick="onFade"
+        android:background="@drawable/btn_fade"
+        android:layout_above="@+id/spin_btn"
+        android:layout_centerHorizontal="true" />
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@+id/fade_btn"
+        android:layout_below="@+id/include2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_margin="30dp"
+        android:background="@drawable/bg_cell_animation_test">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:text="BOUNS POINTS FOR CREATIVITY"
+            android:id="@+id/bonus_textView"
+            android:layout_gravity="center"
+            android:textSize="18sp" />
+
+        <TextView
+            android:layout_width="254dp"
+            android:layout_height="143dp"
+            android:gravity="center"
+            android:text="Animate the AppPartener Icon. Make it fade to 0% alpha and then to 100% alpha when the fade button is pressed. Allow it to be dragged around the screen by touching and dragging."
+            android:id="@+id/animation_textView"
+            android:layout_gravity="center_horizontal|top"
+            android:layout_margin="5dp"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:layout_width="114dp"
+            android:layout_height="114dp"
+            android:id="@+id/imageView2"
+            android:src="@drawable/ic_apppartner"
+
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="5dp"
+            android:layout_gravity="center_horizontal|bottom" />
+    </FrameLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/spin_btn"
+        android:onClick="onSpin"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/btn_spin"
+        android:layout_alignRight="@+id/fade_btn"
+        android:layout_alignEnd="@+id/fade_btn"
+        android:layout_alignLeft="@+id/fade_btn"
+        android:layout_alignStart="@+id/fade_btn"
+        android:layout_marginBottom="20dp" />
+
+
+</RelativeLayout>

@@ -1,0 +1,41 @@
+Major codes used from the following two websites. 
+http://www.wikihow.com/Execute-HTTP-POST-Requests-in-Android
+http://stackoverflow.com/questions/26112150/android-create-circular-image-with-picasso
+
+few minor syntax/snippets found in documentations and stackoverflow among other google search results.
+
+Activities
+SplashActivity - Display a 1 second splash screen with image
+
+MainActivity - has three buttons, chat,login and animation to navigate to corresponding activities.
+
+ChatActivity - displays the chats in a list view with images, person name and text.
+
+LoginActivity - takes in username and password to make a POST request and display response in an alert dialogue box with the tie taken in milliseconds to make the request and get the response. If the authentication is successful then returns to the main activity when ok is click on the alert box.
+
+AnimationActivity - This has a frame with some text and image. The image can be faded in and out or spin by clicking the appropriate buttons. The image can also be dragged and moved around in the frame.
+
+Adapters
+ChatsArrayAdapter - this is adapter to make set the contents of the list view in the chat activity
+
+Support
+JSONParser - this class is making a hppt client connection to execute the post request and response.
+
+Layouts
+activity_splash
+activity_main
+activity_chat
+activity_login
+activity_animation
+cell_chat
+toolbar
+
+The application took about 14-16 hours total to make.
+The first few of hours were spent on properly importing the project to android studios and setting up everything and going through the requirements.
+
+The next two hours were spent on getting up the correct UI and going through the given code.
+the next 8 hours were spent on finding, understanding and writing the codes used for the Animation ,Chat and Login Activities along with testing every functionality. Some time was spent on deciding which third party library to use for fetching images from url(s). I looked into okhttp, google volley and piccaso, I decided to use piccaso for this project. 
+
+The last 4 hours were spent on adding extra features which were not directly mentioned in the wireframe requirement and documenting everything along with final testing before submission.
+
+
